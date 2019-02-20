@@ -1,0 +1,18 @@
+.gif-container{
+    border: solid black 2px;
+    max-width: max-content;
+    display: inline-grid;
+    margin: 10px;
+
+}
+
+label {
+    vertical-align: bottom;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+button{
+    margin: 10px;
+}
