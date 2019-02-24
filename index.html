@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-
-
 
     <title>GifTastic</title>
 </head>
@@ -17,27 +17,36 @@
 <body>
 
     <div class="container">
-        <div class = "row">
-            <div class = "search-box">
-                <label for="term-search">Search for your favorite cartoon gif:</label>
-                <input type="text" class="search" id="term-search">
-                <button class="btn-primary get-topic"> Search </button>
+        <div class="row header-search rounded">
+
+            <div class="col-sm-12 col-md-6">
+                <div class="input-group">
+                    <label for="term-search" class="title">Add for your favorite cartoon:</label>
+                    <div class="flex">
+                        <input type="text" class="form-control" id="term-search" placeholder="Cartoon title"><span
+                            type="submit" class="input-group-addon get-topic">Submit</span>
+                    </div>
+
+                    <small id="new-search" class="form-text text-muted">Once you enter a title, new search button will
+                        appear. Click on the button to view results.</small>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6">'
+                <img class="nav-image" src="assets/images/Nav-bar-2.jpg">
             </div>
         </div>
-        <div class = "row">
 
-        </div>
-        <div id="searchTopics"></div>
-        <div class="col">
+        <div class="row">
+            <div class="topics" id="searchTopics"></div>
+            <div class="content">
                 <div id="content"></div>
+            </div>
+
         </div>
-        
+
+
     </div>
-
-
-
-
-
 
 
 

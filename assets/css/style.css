@@ -1,3 +1,9 @@
+.title{
+    font-family: 'Coiny', cursive;
+    font-size: x-large;
+    color: #495057;
+}
+
 .gif-container{
     border: solid black 2px;
     max-width: max-content;
@@ -6,7 +12,7 @@
 
 }
 
-label {
+.rating {
     vertical-align: bottom;
     display: inline-block;
     text-align: center;
@@ -16,3 +22,37 @@ label {
 button{
     margin: 10px;
 }
+
+
+.header-search{
+    background: white;
+    
+}
+
+.nav-image{
+    position: relative;
+    max-width: 100%;
+
+}
+
+body{
+    background-image: url("../images/background-pattern.png");
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+ }
+.input-group{
+    padding-top: 20px;
+}
+
+.input-group-addon { 
+        width: 100px; 
+        padding: .375rem .75rem;
+        color: #495057;
+        border: 1px solid #ced4da;
+    }
+
+    

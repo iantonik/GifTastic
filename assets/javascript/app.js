@@ -9,6 +9,7 @@ var searchButtons = function(){
 
 function newTopic() {
     var term = $("#term-search").val();
+    
     topics.push(term);
     $("#searchTopics").empty();
     searchButtons();
@@ -59,8 +60,3 @@ var getGifs = function(val){
 
     })
 }
-
-
-// $('.my_button').click(function() {
-//     alert($(this).html());
-// });
