@@ -35,15 +35,16 @@ $(document).ready(function(){
     })
 
     $('body').on('click', '.btn', function(){
-        getGifs($(this).attr('id'));
+        var random = Math.floor((Math.random() * 300) + 1); //random number to randomize (offset) returned gifs.
+        getGifs($(this).attr('id'), random);
     })
 
 })
 
 
-var getGifs = function(val){
+var getGifs = function(val, offset){
 
-    var queryURL = `https://api.giphy.com/v1/gifs/search?api_key=dbxE4AeAj1uO5DeV5TkncBQh7eeTaRHB&q=${val}&limit=10&offset=20&lang=en`
+    var queryURL = `https://api.giphy.com/v1/gifs/search?api_key=dbxE4AeAj1uO5DeV5TkncBQh7eeTaRHB&q=${val}&limit=10&offset=${offset}&lang=en`
 
     $.ajax({
         url: queryURL,
