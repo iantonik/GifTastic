@@ -2,7 +2,7 @@ topics=['Tom and Jerry', 'The Flintstones', 'Looney Tunes', 'The Road Runner Sho
 
 var searchButtons = function(){
     topics.forEach(element => {
-        $(`<button type = "button" class="btn btn-outline-primary" id="${element}">${element}</button>`).appendTo("#searchTopics")
+        $(`<button type = "button" class="btn btn-sm custombtn" id="${element}">${element}</button>`).appendTo("#searchTopics")
     });
     
 }
@@ -50,9 +50,6 @@ var getGifs = function(val){
         method: "GET"
     }).then(function(response){
         var content = response.data;
-
-        console.log(response);
-        console.log(content);
         for (i=0; i<content.length; i++){
             $("#content").prepend(`<div class="gif-container"><img class="gif" src="${content[i].images.fixed_height_still.url}"><label class="rating">Rating: ${content[i].rating}</label></div>`)
         }

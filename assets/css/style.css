@@ -4,19 +4,34 @@
     color: #495057;
 }
 
-.gif-container{
-    border: solid black 2px;
-    max-width: max-content;
-    display: inline-grid;
-    margin: 10px;
+#background {
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom, white, purple); /* Standard syntax (must be last) */
+  }
 
+.content-background{
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom, purple, white); /* Standard syntax (must be last) */
 }
 
 .rating {
     vertical-align: bottom;
     display: inline-block;
     text-align: center;
-    width: 120px;
+    color: #3b075d; 
+    background-image: linear-gradient(to bottom, #51b2ba, #e8d3dc);
+    margin: 0;
+    
+}
+
+.gif-container{
+    border: solid #3b075d 2px;
+    max-width: max-content;
+    display: inline-grid;
+    margin: 10px;
+}
+img{
+    max-width: 100%;
 }
 
 button{
@@ -55,4 +70,12 @@ body{
         border: 1px solid #ced4da;
     }
 
-    
+ul{
+    padding-inline-start: 10px;
+}
+
+.custombtn{
+    color: #3b075d;
+    border: 1px solid #3b075d;
+    background-image: linear-gradient(to bottom, #51b2ba, #e8d3dc);
+}

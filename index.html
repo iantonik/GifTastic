@@ -16,6 +16,7 @@
 
 <body>
 
+
     <div class="container">
         <div class="row header-search rounded">
 
@@ -26,26 +27,35 @@
                         <input type="text" class="form-control" id="term-search" placeholder="Cartoon title"><span
                             type="submit" class="input-group-addon get-topic">Submit</span>
                     </div>
-
                     <small id="new-search" class="form-text text-muted">Once you enter a title, new search button will
                         appear. Click on the button to view results.</small>
                 </div>
-
             </div>
             <div class="col-sm-12 col-md-6">'
                 <img class="nav-image" src="assets/images/Nav-bar-2.jpg">
             </div>
         </div>
+    </div>
+    <nav class="container navbar-expand-lg navbar-light" id="background">
+        <a class="title">Topics:</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="searchTopics">
+                <!-- container for topic search buttons -->
+            </ul>
+        </div>
+    </nav>
 
+    <div class="container content-background">
         <div class="row">
-            <div class="topics" id="searchTopics"></div>
             <div class="content">
                 <div id="content"></div>
             </div>
 
         </div>
-
-
     </div>
 
 
